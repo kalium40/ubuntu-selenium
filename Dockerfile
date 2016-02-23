@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 MAINTAINER Tatsuhiko Kono<t-kouno@osaka-univ.coop>
 
 RUN apt-get update -y && apt-get upgrade -y
-RUN apt-get install python3-dev python-dev python3-pip python-pip libpq-dev xvfb firefox git language-pack-ja -y
+RUN apt-get install python3-dev python-dev python3-pip python-pip libpq-dev xvfb firefox git language-pack-ja zip -y
 RUN locale-gen ja_JP.UTF-8
 RUN dpkg-reconfigure locales
 RUN echo "Asia/Tokyo" > /etc/timezone
